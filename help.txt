@@ -1,0 +1,9 @@
+RULES:
+1.	To trigger me use prifix ">>"
+2.	Separate mulltiple users using semi-colon ";"
+
+COMMANDS AVAILABLE:
+1.	help, Help, !  -> to seek help from me 
+2.	hello, Hello   -> to greet me
+3.	date, time, dateTime   -> current date time
+4.	putDown user1; user2...   ->to display users data

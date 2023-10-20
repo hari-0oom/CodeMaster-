@@ -1,0 +1,38 @@
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+										SETTING UP DATABASE FOR MY PROJECT
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+->>>>>>>> snce i have only one access point i can safely use sqlite, but in case i have my bot active on multiple servers it may cause problems
+
+
+
+Deciding whether to use a full-fledged SQL database or SQLite for your Python project depends on various factors such as the project's size, complexity, scalability requirements, and deployment considerations. Here are some guidelines to help you make a decision:
+
+**Use SQLite When:**
+
+1. **Single-User/Desktop Applications:** SQLite is a serverless, embedded database, which means it's a great choice for single-user applications, desktop tools, mobile apps, and small-scale projects where simplicity and lightweight deployment are important.
+
+2. **Prototyping and Testing:** If you're in the early stages of development and want a quick way to set up a database for testing and prototyping, SQLite can be a good choice due to its simplicity.
+
+3. **Minimal Setup:** SQLite doesn't require a separate server process or complex configurations. It's just a file-based database, making it easy to set up and manage.
+
+4. **Low to Moderate Data Volume:** If your project deals with a relatively small amount of data and doesn't require heavy concurrency or complex querying, SQLite can perform well.
+
+5. **No Need for Concurrent Users:** SQLite operates in a single-user mode and isn't designed for concurrent access from multiple users. If you have a multi-user application, consider other options.
+
+**Use a Full-Fledged SQL Database When:**
+
+1. **Web Applications:** For web applications or projects that need to support multiple users concurrently, a full-fledged SQL database (e.g., MySQL, PostgreSQL) is a better fit due to their client-server architecture and robust transaction management.
+
+2. **Large-Scale and Complex Projects:** If your project deals with large amounts of data, complex relationships, and advanced querying requirements, a SQL database provides the necessary tools and optimizations.
+
+3. **Data Integrity and ACID Compliance:** SQL databases are known for their strong support of ACID properties (Atomicity, Consistency, Isolation, Durability), which ensures data integrity even in the face of failures.
+
+4. **Scalability and Performance:** As your project grows, SQL databases provide better mechanisms for scaling, both vertically and horizontally, using techniques like sharding and replication.
+
+5. **Security and Authentication:** SQL databases offer advanced security features, authentication, and user management, making them suitable for applications that require strict access control.
+
+Remember that choosing the right database system depends on understanding your project's specific requirements and considering factors like data structure, expected user concurrency, scalability needs, and the trade-offs between simplicity and feature richness. You can also migrate from SQLite to a full-fledged SQL database later if your project's needs evolve.
